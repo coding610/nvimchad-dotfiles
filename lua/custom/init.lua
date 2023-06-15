@@ -7,11 +7,15 @@ function Map(mode, lhs, rhs, opts)
 end
 
 
-Map('n', " o", ":wqa<CR>", {silent=true})
+Map('n', "<leader>o", ":wqa<CR>", {silent=true})
+Map('n', "<leader>pv", ":NvimTreeToggle<CR>", {silent=true})
+Map('n', "<leader><leader>", ":so<CR>", {silent=true})
+Map('n', "<leader>pf", ":Telescope find_files<CR>", {silent=true})
 
 local set = vim.opt
 set.number = true
 set.relativenumber = true
+set.wrap = false
 
 set.expandtab = true
 set.tabstop=4
