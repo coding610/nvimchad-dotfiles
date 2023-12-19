@@ -29,8 +29,13 @@ lspconfig['rust_analyzer'].setup({
                 },
             },
             procMacro = {
-                enable = true
+                enable = true,
             },
-        }
+            diagnostics = {
+                experimental = {
+                    enable = true
+                }
+            }
+        },
     }
 })
