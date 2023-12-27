@@ -10,6 +10,16 @@ local plugins = {
         "xiyaowong/nvim-transparent",
     },
     {
+        'rcarriga/nvim-dap-ui',
+        requires = {"mfussenegger/nvim-dap"}
+    },
+    {
+        "theHamsta/nvim-dap-virtual-text"
+    },
+    {
+        require("dapui").setup()
+    },
+    {
         "nvim-lua/lsp_extensions.nvim",
         config = function()
         end,

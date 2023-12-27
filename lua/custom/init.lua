@@ -15,6 +15,7 @@ Map('n', "<leader>pdd", ":lua vim.diagnostic.disable()<CR>", {silent=true})
 Map('n', "<leader>pde", ":lua vim.diagnostic.enable()<CR>", {silent=true})
 Map('n', "<leader>ge", ":lua lsp.goto_", {silent=true})
 Map('n', "<leader>s", "v$h", {silent=true})
+Map('n', "<leader>y", ":redo<CR>", {silent=true})
 
 local set = vim.opt
 -- vim.opt.guicursor = ""
